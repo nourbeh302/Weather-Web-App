@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    Hello
+    <WeatherCard />
+    <div class="input-wrapper">
+      <h2>Search</h2>
+      <div class="flex align-center">
+        <i class="ri-search-line"></i>
+        <input type="text" placeholder="Enter a city name" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import "./css/App.css";
+import "./css/Flex.css";
+import WeatherCard from "./components/WeatherCard.vue";
 export default {
-  name: 'App',
-  components: {}
-}
+  name: "App",
+  components: { WeatherCard },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
